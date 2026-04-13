@@ -1,0 +1,7 @@
+1. create a dataset directory and put all datasets there see the data/util.py file. and adjust path if needed
+2. run experiments using the run_script.sh, you might find it helpful.
+3. if you see the one of the commands in the run_script.sh it looks like this:
+    "CUDA_VISIBLE_DEVICES=0 python train.py --train_lff_unaware --dataset=cmnist --percent=5pct --lr=0.01 --exp=lff_baseline_5pct --fix_randomseed --seed=42 |& tee exp_results/cmnist/5/lff.log"
+
+see that after & tee I have mentioned a path where log terminal output will be saved make sure that path exists for file to be saved!
+further the code should automatically create a log directory and susequent directory within it with your exp_name it will a contain a csv file with intermediate results.

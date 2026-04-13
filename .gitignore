@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pt
+fl_results/
+.ipynb_checkpoints/
+.pluto-ide/
